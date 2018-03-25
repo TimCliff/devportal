@@ -17,7 +17,13 @@ exclude: true
                                 <BR>
                                 <B>Expected Response JSON:</B>
                                 <BR>
+                                {{method.expected_response_json}}
+                                <BR>
                                 {{method.expected_response_json | jsonify}}
+                                <BR>
+                                {{method.expected_response_json | pretty_json }}
+                                <BR>
+                                {{method.expected_response_json | neat_json }}
 			</section>
                 <hr/>
 	    {% endfor %}
